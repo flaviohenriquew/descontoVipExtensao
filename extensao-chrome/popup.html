@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descontovip Aff</title>
+    <style>
+        body {
+            min-width: 200px;
+            padding: 10px;
+        }
+        button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+        }
+        #cleanLink {
+            display: none;
+        }
+        #magaluSection {
+            display: none;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        #magaluResult, #copyMagaluLinks {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h3>Descontovip extensão</h3>
+    <button id="showMagaluInput">Gerar Links Magalu</button>
+
+    <div id="magaluSection">
+        <textarea id="magaluCodes" placeholder="Insira os códigos separados por espaços ou quebras de linha"></textarea>
+        <button id="generateMagaluLinks">Gerar Links</button>
+        <textarea id="magaluResult" readonly></textarea>
+        <button id="copyMagaluLinks">Copiar Links</button>
+    </div>
+
+    <button id="openOptions">Configurações</button>
+
+    <script type="module" src="js/popup.js"></script>
+
+</body>
+</html>

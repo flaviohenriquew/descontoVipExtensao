@@ -1,50 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descontovip Aff</title>
-    <style>
-        body {
-            min-width: 200px;
-            padding: 10px;
-        }
-        button {
-            display: block;
-            margin: 10px 0;
-            padding: 10px;
-            width: 100%;
-        }
-        #cleanLink {
-            display: none;
-        }
-        #magaluSection {
-            display: none;
-        }
-        textarea {
-            width: 100%;
-            height: 100px;
-            margin-bottom: 10px;
-        }
-        #magaluResult, #copyMagaluLinks {
-            display: none;
-        }
-    </style>
+    <title>Descontovip Extensão</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
     <h3>Descontovip extensão</h3>
-    <button id="showMagaluInput">Gerar Links Magalu</button>
 
+    <!-- Botão para gerar o link Shopee -->
+    <button id="generateShopeeLink">Gerar Link Shopee</button>
+
+    <!-- Botão para mostrar a entrada de códigos Magalu -->
+    <button id="showMagaluInput">Mostrar entrada Magalu</button>
+
+    <!-- Seção Magalu (oculta até que o botão seja clicado) -->
     <div id="magaluSection">
-        <textarea id="magaluCodes" placeholder="Insira os códigos separados por espaços ou quebras de linha"></textarea>
-        <button id="generateMagaluLinks">Gerar Links</button>
-        <textarea id="magaluResult" readonly></textarea>
-        <button id="copyMagaluLinks">Copiar Links</button>
+        <textarea id="magaluCodes" placeholder="Insira os códigos de produtos da Magalu (um por linha)"></textarea>
+        <button id="generateMagaluLinks">Gerar Links Magalu</button>
+
+        <!-- Campo para mostrar o resultado dos links gerados -->
+        <textarea id="magaluResult" readonly style="display:none;"></textarea>
+        <button id="copyMagaluLinks" style="display:none;">Copiar Links</button>
     </div>
 
+    <!-- Botão para abrir a página de configurações -->
     <button id="openOptions">Configurações</button>
 
     <script type="module" src="js/popup.js"></script>
-
 </body>
 </html>

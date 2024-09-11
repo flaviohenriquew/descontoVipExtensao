@@ -3,12 +3,27 @@
   "name": "Descontovip Extensão",
   "version": "1.0",
   "description": "Modifica links da Shopee e Magalu",
-  "permissions": ["storage", "activeTab", "tabs"],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "contextMenus",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
   "action": {
     "default_popup": "popup.html",
     "default_title": "Gerar links Magalu"
   },
   "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://*.shopee.com.br/*"],
+      "js": ["js/content.js"]
+    }
+  ],
   "icons": {
     "16": "assets/icons/icon16.png",
     "48": "assets/icons/icon48.png",

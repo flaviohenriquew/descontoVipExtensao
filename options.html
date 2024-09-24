@@ -4,36 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        label, input {
-            display: block;
-            margin-bottom: 10px;
-        }
-        button {
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/styles/styles.css"> <!-- Importando o styles.css -->
 </head>
-<body>
+<body class="config-page">
     <h1>Configurações</h1>
     
     <label for="magaluBaseUrl">Link base da Magalu:</label>
     <input type="text" id="magaluBaseUrl" placeholder="https://www.magazinevoce.com.br/casadapromocoes/p/" />
 
-    <label for="showProductName">Exibir nome do produto:</label>
-    <input type="checkbox" id="showProductName" />
+    <label for="showProductName">
+        <input type="checkbox" id="showProductName" /> Exibir nome do produto
+    </label>
 
     <button id="saveSettings">Salvar Configurações</button>
 
     <script type="module" src="js/options.js"></script>
-
 </body>
 </html>

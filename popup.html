@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Descontovip Extensão</title>
-    <!-- Link para o arquivo CSS externo -->
-    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/styles.css"> <!-- Mantendo o CSS que você já tem -->
 </head>
 <body>
-    <h3>Descontovip extensão</h3>
+    <h3>Descontovip Extensão</h3>
 
-    <!-- Botão para gerar o link Shopee -->
+    <!-- Botão para gerar link Shopee -->
     <button id="generateShopeeLink">Gerar Link Shopee</button>
 
     <!-- Botão para mostrar a entrada de códigos Magalu -->
     <button id="showMagaluInput">Mostrar entrada Magalu</button>
 
-    <!-- Seção Magalu (oculta até que o botão seja clicado) -->
+    <!-- Seção Magalu (inicialmente oculta, conforme styles.css) -->
     <div id="magaluSection">
-        <textarea id="magaluCodes" placeholder="Insira os códigos de produtos da Magalu (um por linha)"></textarea>
+        <!-- Área de texto para inserir códigos Magalu -->
+        <textarea id="magaluCodes" placeholder="Insira os códigos de produtos da Magalu (separado por espaços)"></textarea>
+
+        <!-- Botão para gerar os links Magalu -->
         <button id="generateMagaluLinks">Gerar Links Magalu</button>
 
         <!-- Campo para mostrar o resultado dos links gerados -->
@@ -28,6 +30,7 @@
     <!-- Botão para abrir a página de configurações -->
     <button id="openOptions">Configurações</button>
 
+    <!-- Link para o script JavaScript -->
     <script type="module" src="js/popup.js"></script>
 </body>
 </html>
